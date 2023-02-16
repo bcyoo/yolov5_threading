@@ -1,6 +1,8 @@
 import cv2
 import torch
+import queue
 from yolov5 import detect  # yolov5 detection 함수
+
 
 # video 파일 읽어오기
 cap = cv2.VideoCapture('video.mp4')
@@ -50,7 +52,7 @@ YOLOv5를 사용하여 detection을 수행
 cv2.VideoCapture() 비디오 파일을 읽어와 프레임을 가져온 후,
 frame_queue에 추가, 이후 detect() 함수를 사용하여 
 YOLOv5를 이용하여 detection을 수행하고, 
-detection_queue에 추가.
+detection_queue에 추가
 이렇게 frame_queue와 detection_queue에 프레임과 detection을 추가하면, 
 main() 함수에서 멀티스레딩
 """
