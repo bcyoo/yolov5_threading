@@ -111,6 +111,6 @@ frame_queue에서 프레임을 가져오고,
 검출된 결과를 detection_queue에 넣음
 results_queue에서 처리된 결과
 None일 경우, 큐를 닫음
-결과를 처리합니다.
+결과 처리
 frame_queue, detection_queue, results_queue에 task가 처리
 """
